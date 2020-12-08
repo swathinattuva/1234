@@ -24,7 +24,7 @@ pipeline {
 		stage('Artifact upload'){
 			steps{
 				echo 'Artifact Upload stage'
-				nexusArtifactUploader artifacts: [[artifactId: 'sample', classifier: '', file: '/home/tomcat/.jenkins/workspace/Project2/sample/target/sample-1.1-SNAPSHOT.jar', type: 'jar']], credentialsId: '0e4de5af-4845-4e46-835b-d521bb9c223c', groupId: 'com.my', nexusUrl: '192.168.110.133:8081/nexus', nexusVersion: 'nexus2', protocol: 'http', repository: 'snapshots', version: '1.1-SNAPSHOT'
+				nexusArtifactUploader artifacts: [[artifactId: 'sample', classifier: '', file: '/home/tomcat/.jenkins/workspace/Project2/sample/target/sample-1.1-SNAPSHOT.jar', type: 'jar']], credentialsId: '18352780-27b9-497d-b4ee-921e5cacde3c', groupId: 'com.my', nexusUrl: '192.168.110.133:8081/nexus', nexusVersion: 'nexus2', protocol: 'http', repository: 'snapshots', version: '1.1-SNAPSHOT'
 	    
 			}
 		}
