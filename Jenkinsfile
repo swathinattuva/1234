@@ -7,7 +7,7 @@ pipeline {
 		stage('checkout'){
 			steps{
 				echo 'checkout stage'
-				git 'https://github.com/devopss1/demo.git'
+				git 'https://github.com/swathinattuva/1234.git'
 			}
 		}
 		stage('Build'){
